@@ -1,0 +1,1225 @@
+body {
+    background-color: #000000;
+    margin: 0;
+}
+
+
+
+
+.portada {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+
+
+.menu {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+
+
+    display: flex;
+    gap: 15px;
+}
+
+
+.menu a {
+    background-color: #173d25;
+    color: white;
+    text-decoration: none;
+
+
+    padding: 12px 20px;
+    border-radius: 5px;
+
+
+    font-size: 16px;
+    font-weight: bold;
+
+
+    border: 2px solid #285c38;
+
+
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+    background-color: #285c38;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #285c38;
+}
+
+
+
+
+
+
+.portada::after {
+    content: "";
+    position: absolute;
+
+
+    bottom: 0;
+    left: 0;
+
+
+    width: 100%;
+    height: 150px;
+
+
+    background: linear-gradient(
+        transparent,
+        #07120b
+    );
+
+
+    pointer-events: none;
+}
+
+
+.separador {
+    height: 80px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: #07120b;
+
+
+    color: #5f8f68;
+
+
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+
+
+
+.background {
+    width: 90%;
+    min-height: 700px;
+
+
+    margin: 0 auto;
+
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("8ee9f26b-6228-41fa-8016-7c2aefb7f6ec.jpg");
+
+
+    background-size: cover;
+    background-position: center;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto {
+    width: 70%;
+
+
+    margin: 0;
+    padding: 20px;
+
+
+    color: white;
+
+
+    text-align: center;
+    font-size: 20px;
+
+
+    text-shadow: 2px 2px 5px black;
+
+
+    box-sizing: border-box;
+}
+
+
+
+
+.imagen-superior {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.imagen-superior img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+.historia {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.historia > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: brightness(40%);
+}
+
+
+
+
+.historia::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(10, 25, 10, 0.35) 45%,
+        rgba(0, 0, 0, 0.9) 100%
+    );
+
+    z-index: 1;
+}
+
+
+
+
+.historia .texto {
+    position: relative;
+    z-index: 2;
+
+    width: 75%;
+    max-width: 950px;
+
+    text-align: center;
+}
+
+
+
+
+.historia .texto h1 {
+    color: white;
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+
+    text-shadow:
+        0 2px 10px black,
+        0 0 20px rgba(80, 120, 80, 0.6);
+}
+
+
+
+
+.historia .texto p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+
+    text-shadow: 0 2px 8px black;
+}
+
+
+
+
+.volver {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    padding: 50px 0 70px;
+}
+
+.volver a {
+    color: white;
+    background-color: #183018;
+
+    border: 1px solid #405a40;
+
+    padding: 15px 30px;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.volver a:hover {
+    background-color: #294629;
+
+    box-shadow: 0 0 20px rgba(100, 150, 100, 0.5);
+
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 10, 4, 0.88),
+            rgba(0, 0, 0, 0.95)
+        ),
+        url("LogoOutlast.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #d8ded8;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+body > div {
+    width: 90%;
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 40px;
+
+    background:
+        linear-gradient(
+            rgba(5, 15, 8, 0.94),
+            rgba(0, 0, 0, 0.96)
+        );
+
+    border: 1px solid #29452f;
+
+    box-shadow:
+        0 0 25px rgba(25, 70, 35, 0.4),
+        inset 0 0 30px rgba(0, 0, 0, 0.8);
+
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+body.outlast1-page {
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background-color: #000 !important;
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+
+
+body.outlast1-page .portada {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 400px;
+
+    overflow: hidden;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+body.outlast1-page .logo {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+}
+
+
+
+
+body.outlast1-page .menu {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 40px;
+
+    display: flex;
+
+    gap: 15px;
+
+    z-index: 10;
+}
+
+
+body.outlast1-page .menu a {
+
+    background-color: #173d25;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    border: 2px solid #285c38;
+
+    transition: 0.3s;
+}
+
+
+body.outlast1-page .menu a:hover {
+
+    background-color: #285c38;
+
+    transform: scale(1.05);
+
+    box-shadow: 0 0 15px #285c38;
+}
+
+
+
+
+body.outlast1-page .portada::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 150px;
+
+    background: linear-gradient(
+        transparent,
+        #07120b
+    );
+
+    pointer-events: none;
+}
+
+
+
+
+body.outlast1-page .separador {
+
+    height: 80px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #07120b;
+
+    color: #5f8f68;
+
+    font-size: 18px;
+
+    letter-spacing: 5px;
+
+    font-weight: bold;
+}
+
+
+
+
+body.outlast1-page .outlast1-historia {
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #000;
+}
+
+
+
+
+body.outlast1-page .outlast1-imagen {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 600px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+
+
+body.outlast1-page .outlast1-imagen > img {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+    filter:
+        brightness(40%)
+        contrast(115%)
+        saturate(70%);
+}
+
+
+
+
+body.outlast1-page .outlast1-imagen::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.75),
+        rgba(5, 20, 8, 0.25),
+        rgba(0, 0, 0, 0.9)
+    );
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+
+
+body.outlast1-page .outlast1-texto {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 70%;
+
+    max-width: 900px;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+
+
+body.outlast1-page .outlast1-texto h1 {
+
+    margin: 0 0 30px;
+
+    color: white;
+
+    font-size: 42px;
+
+    letter-spacing: 5px;
+
+    text-shadow:
+        0 2px 10px black,
+        0 0 20px rgba(80, 120, 80, 0.6);
+}
+
+
+
+
+body.outlast1-page .outlast1-texto p {
+
+    margin: 0 0 20px;
+
+    color: white;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    text-shadow:
+        0 2px 8px black;
+}
+
+
+
+
+body.outlast1-page .outlast1-boton {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 50px 0 70px;
+
+    background-color: #000;
+}
+
+
+body.outlast1-page .outlast1-boton a {
+
+    color: white;
+
+    background-color: #183018;
+
+    border: 1px solid #405a40;
+
+    padding: 15px 30px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+body.outlast1-page .outlast1-boton a:hover {
+
+    background-color: #294629;
+
+    box-shadow:
+        0 0 20px rgba(100, 150, 100, 0.5);
+
+    transform: translateY(-2px);
+}
+
+
+
+
+body.outlast1-page::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 1000;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,0.02) 0px,
+            rgba(255,255,255,0.02) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+
+    opacity: 0.18;
+}
+
+
+
+
+@media (max-width: 700px) {
+
+    body.outlast1-page .portada {
+
+        height: 300px;
+    }
+
+
+    body.outlast1-page .menu {
+
+        top: 15px;
+
+        right: 15px;
+
+        gap: 5px;
+    }
+
+
+    body.outlast1-page .menu a {
+
+        padding: 8px 10px;
+
+        font-size: 10px;
+    }
+
+
+    body.outlast1-page .separador {
+
+        height: 60px;
+
+        font-size: 13px;
+
+        letter-spacing: 3px;
+    }
+
+
+    body.outlast1-page .outlast1-imagen {
+
+        height: 650px;
+    }
+
+
+    body.outlast1-page .outlast1-texto {
+
+        width: 85%;
+    }
+
+
+    body.outlast1-page .outlast1-texto h1 {
+
+        font-size: 28px;
+    }
+
+
+    body.outlast1-page .outlast1-texto p {
+
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+}
+
+
+
+
+
+
+body.outlast2-page {
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    background-color: #000 !important;
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+
+
+body.outlast2-page .portada {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 400px;
+
+    overflow: hidden;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+
+
+body.outlast2-page .logo {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+    filter:
+        brightness(75%)
+        contrast(110%)
+        saturate(80%);
+}
+
+
+
+
+body.outlast2-page .menu {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 40px;
+
+    display: flex;
+
+    gap: 15px;
+
+    z-index: 10;
+}
+
+
+body.outlast2-page .menu a {
+
+    background-color: #173d25;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    border: 2px solid #285c38;
+
+    transition: 0.3s;
+}
+
+
+body.outlast2-page .menu a:hover {
+
+    background-color: #285c38;
+
+    transform: scale(1.05);
+
+    box-shadow: 0 0 15px #285c38;
+}
+
+
+
+
+body.outlast2-page .portada::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 150px;
+
+    background: linear-gradient(
+        transparent,
+        #07120b
+    );
+
+    pointer-events: none;
+}
+
+
+
+body.outlast2-page .separador {
+
+    height: 80px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #07120b;
+
+    color: #5f8f68;
+
+    font-size: 18px;
+
+    letter-spacing: 5px;
+
+    font-weight: bold;
+}
+
+
+
+
+body.outlast2-page .outlast2-historia {
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #000;
+}
+
+
+
+
+body.outlast2-page .outlast2-imagen {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 650px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+
+
+body.outlast2-page .outlast2-imagen > img {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+    filter:
+        brightness(38%)
+        contrast(115%)
+        saturate(65%);
+}
+
+
+
+body.outlast2-page .outlast2-imagen::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.78),
+        rgba(5, 20, 8, 0.25),
+        rgba(0, 0, 0, 0.92)
+    );
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+
+
+body.outlast2-page .outlast2-texto {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 70%;
+
+    max-width: 950px;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+
+
+body.outlast2-page .outlast2-texto h1 {
+
+    margin: 0 0 30px;
+
+    color: white;
+
+    font-size: 42px;
+
+    letter-spacing: 5px;
+
+    text-shadow:
+        0 2px 10px black,
+        0 0 20px rgba(80, 120, 80, 0.6);
+}
+
+
+
+body.outlast2-page .outlast2-texto p {
+
+    margin: 0 0 20px;
+
+    color: white;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    text-shadow:
+        0 2px 8px black;
+}
+
+
+body.outlast2-page .outlast2-boton {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 50px 0 70px;
+
+    background-color: #000;
+}
+
+
+body.outlast2-page .outlast2-boton a {
+
+    color: white;
+
+    background-color: #183018;
+
+    border: 1px solid #405a40;
+
+    padding: 15px 30px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+body.outlast2-page .outlast2-boton a:hover {
+
+    background-color: #294629;
+
+    box-shadow:
+        0 0 20px rgba(100, 150, 100, 0.5);
+
+    transform: translateY(-2px);
+}
+
+
+
+body.outlast2-page::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 1000;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,0.02) 0px,
+            rgba(255,255,255,0.02) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+
+    opacity: 0.18;
+}
+
+
+
+
+@media (max-width: 700px) {
+
+    body.outlast2-page .portada {
+
+        height: 300px;
+    }
+
+
+    body.outlast2-page .menu {
+
+        top: 15px;
+
+        right: 15px;
+
+        gap: 5px;
+    }
+
+
+    body.outlast2-page .menu a {
+
+        padding: 8px 10px;
+
+        font-size: 10px;
+    }
+
+
+    body.outlast2-page .separador {
+
+        height: 60px;
+
+        font-size: 13px;
+
+        letter-spacing: 3px;
+    }
+
+
+    body.outlast2-page .outlast2-imagen {
+
+        height: 750px;
+    }
+
+
+    body.outlast2-page .outlast2-texto {
+
+        width: 85%;
+    }
+
+
+    body.outlast2-page .outlast2-texto h1 {
+
+        font-size: 28px;
+    }
+
+
+    body.outlast2-page .outlast2-texto p {
+
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+}
